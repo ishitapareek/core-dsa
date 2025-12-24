@@ -34,7 +34,8 @@ void insertAtEnd(struct Node** head, int data) {
         *head = newNode;
         return;
     }
-    struct Node* temp = *head;
+    
+    struct Node* temp = *head; 
     while (temp->next != NULL)
         temp = temp->next;
     temp->next = newNode;
